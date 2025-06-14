@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.insyncwithfoo.pyright.configurations.Local">
+    <option name="configurationFile" value="$PROJECT_DIR$/pyproject.toml" />
+    <option name="executable" value="$PROJECT_DIR$/.venv/bin/pyright-python" />
+    <option name="languageServerExecutable" value="$PROJECT_DIR$/.venv/bin/pyright-python-langserver" />
+  </component>
+</project>

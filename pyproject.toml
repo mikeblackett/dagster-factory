@@ -1,0 +1,42 @@
+[project]
+name = "dagster-factory"
+version = "0.0.0"
+description = "A small library for creating Dagster asset factories"
+authors = [
+    {name = "Mike Blackett", email = "27811528+mikeblackett@users.noreply.github.com"},
+]
+dependencies = ["dagster>=1.10.20"]
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.402",
+    "ruff>=0.11.13",
+]
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+extend-include = ["*.ipynb"]
+
+[tool.ruff.format]
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+indent-style = "space"
+line-ending = "auto"
+quote-style = "single"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+preview = true
+
+[tool.pdm]
+distribution = true
+
